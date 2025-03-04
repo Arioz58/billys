@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+.menu-btn {
+  @apply bg-[#F8CD43] text-white p-2 py-3 rounded-full font-bold flex flex-row justify-center items-center border-[2px] border-white/50 shadow-[inset_0_0_0_2px_rgba(255,255,255,0.5)] drop-shadow-lg sm:p-3 sm:rounded-2xl sm:text-lg sm:py-2
+}
+
+.uber-btn{
+  @apply bg-[#FF5DA9] text-white p-2 py-3 rounded-full font-bold border-[2px] border-white/50 shadow-[inset_0_0_0_2px_rgba(255,255,255,0.5)] drop-shadow-lg flex items-center justify-center sm:p-3 sm:rounded-2xl sm:text-lg sm:py-2
+}
+
+.call-btn{
+  @apply bg-[#A855FF] text-white p-2 py-3 rounded-full font-bold flex flex-row justify-center items-center border-[2px] border-white/50 shadow-[inset_0_0_0_2px_rgba(255,255,255,0.5)] drop-shadow-lg sm:p-3 sm:rounded-2xl sm:text-lg sm:py-2
 }
