@@ -1,11 +1,15 @@
-import Header from "@/sections/Header"
-import Hero from "@/sections/Hero"
+import Header from "@/sections/Header";
+import Hero from "@/sections/Hero";
+import MenuAdresse from "@/sections/MenuAdresse";
+import Franchise from "@/sections/Franchise";
 
 export default function Home() {
-  return(
+  return (
     <>
       <Header />
-      <Hero/>
+      <Hero />
+      <MenuAdresse />
+      <Franchise />
     </>
-  )
+  );
 }
